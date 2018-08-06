@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Иван Румянцев](https://up.htmlacademy.ru/htmlcss/22/user/850743).
-* Наставник: `Неизвестно`.
+* Наставник: `Артём Рудов https://htmlacademy.ru/profile/artrudov`.
 
 ---
 
