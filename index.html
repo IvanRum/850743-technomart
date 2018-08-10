@@ -5,8 +5,49 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+    <header class="page-header">
+      <div>
+        <img src="img/logo.svg" width="90" height="90" alt="логотип Техномарт"> <!--Или сделать как текст с классом, а не картинку?-->
+      </div>
+      <span class="search">Поиск</span>
+      <ul class="purchase">
+        <li class="tab">Закладки</li>
+        <li class="busket">Корзина</li>
+        <li class="order">Оформить заказ</li>
+      </ul>
+      <h1 class="head">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <div class="header-phone">+7(812)555-05-55</div>
+      <div class="header-adress">г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8</div>
+      <ul class="user-navigation">
+        <li class="login-link">Войти</li>
+        <li class="registration-link">Регистрация</li>
+      </ul>
+      <nav class="header-navigation">
+        <ul class="site-navigation">
+         <li><a href="index.html">Главная</a></li>
+         <li><a href="company.html">Компания</a></li>
+         <li><a href="catalog.html">Каталог</a></li>
+         <li><a href="news.html">Новости</a></li>
+         <li><a href="offer.html">Спецпредложения</a></li>
+         <li><a href="contacts.html">Контакты</a></li>
+         <li><a href="delivery.html">Доставка</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+     <section class="promo-block">
+        <h2 class="visually-hidden">Промо-блок</h2>
+       <nav class="catalog-navigation">
+         <ul> <!--Может вообще таблицей сделать?-->
+           <li class="materials">Материалы<a href="catalog/materials.html">На любой вкус</a></li><!--Не придумал как добавить кнопки красиво. Может вторым уровнем списка?-->
+           <li class="intruments">Инструменты<a href="catalog/intruments.html">На все случаи</a></li>
+           <li class="tech">Техника<a href="catalog/tech.html">Для стройки</a></li>
+           <li class="drills">Дрели Соседям на радость!<a href="catalog/intruments/drills.html">Открыть каталог</a></li><!--не очень нравятся мне ссылки, не могу понять почему-->
+           <li class="discounts">Скидки 50%<a href="catalog/discounts.html">На 350 товаров</a></li><!-- Тоже не нравится. Не отдельную же страницу с товарами со скидкой делать-->
+         </ul>
+       </nav>
+       <div class="delivery-free">Доставка<a href="#Доставка">Бесплатно</a></div>
+     </section>
+    </main>
   </body>
 </html>
