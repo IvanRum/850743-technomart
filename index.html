@@ -11,9 +11,9 @@
       </div>
       <span class="search">Поиск</span>
       <ul class="purchase">
-        <li class="tab">Закладки</li>
-        <li class="busket">Корзина</li>
-        <li class="order">Оформить заказ</li>
+          <li class="tab">Закладки</li>
+          <li class="busket">Корзина</li>
+          <li class="order">Оформить заказ</li>
       </ul>
       <h1 class="head">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <div class="header-phone">+7(812)555-05-55</div>
@@ -24,30 +24,106 @@
       </ul>
       <nav class="header-navigation">
         <ul class="site-navigation">
-         <li><a href="index.html">Главная</a></li>
-         <li><a href="company.html">Компания</a></li>
-         <li><a href="catalog.html">Каталог</a></li>
-         <li><a href="news.html">Новости</a></li>
-         <li><a href="offer.html">Спецпредложения</a></li>
-         <li><a href="contacts.html">Контакты</a></li>
-         <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="company.html">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="offer.html">Спецпредложения</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="delivery.html">Доставка</a></li><!--Может добавить относительные ссылки на компания,контакты,доставка?-->
         </ul>
       </nav>
     </header>
-    <main>
-     <section class="promo-block">
+    <main class="page-main">
+      <section class="promo-block">
         <h2 class="visually-hidden">Промо-блок</h2>
-       <nav class="catalog-navigation">
-         <ul> <!--Может вообще таблицей сделать?-->
-           <li class="materials">Материалы<a href="catalog/materials.html">На любой вкус</a></li><!--Не придумал как добавить кнопки красиво. Может вторым уровнем списка?-->
-           <li class="intruments">Инструменты<a href="catalog/intruments.html">На все случаи</a></li>
-           <li class="tech">Техника<a href="catalog/tech.html">Для стройки</a></li>
-           <li class="drills">Дрели Соседям на радость!<a href="catalog/intruments/drills.html">Открыть каталог</a></li><!--не очень нравятся мне ссылки, не могу понять почему-->
-           <li class="discounts">Скидки 50%<a href="catalog/discounts.html">На 350 товаров</a></li><!-- Тоже не нравится. Не отдельную же страницу с товарами со скидкой делать-->
-         </ul>
-       </nav>
-       <div class="delivery-free">Доставка<a href="#Доставка">Бесплатно</a></div>
-     </section>
+        <nav class="catalog-navigation">
+          <ul> <!--Может вообще таблицей сделать?-->
+            <li class="materials">Материалы<a href="catalog/materials.html">На любой вкус</a></li><!--Не придумал как добавить кнопки красиво. Может вторым уровнем списка?-->
+            <li class="intruments">Инструменты<a href="catalog/intruments.html">На все случаи</a></li>
+            <li class="tech">Техника<a href="catalog/tech.html">Для стройки</a></li>
+            <li class="drills">Дрели Соседям на радость!<div class="button"><a href="catalog/intruments/drills.html">Открыть каталог</a></div></li><!--не очень нравятся мне ссылки, не могу понять почему-->
+            <li class="discounts">Скидки 50%<a href="catalog/discounts.html">На 350 товаров</a></li><!-- Тоже не нравится. Не отдельную же страницу с товарами со скидкой делать-->
+          </ul>
+        </nav>
+        <div class="delivery-free">Доставка<a href="#Доставка">Бесплатно</a></div>
+      </section>
+      <section class="popular">
+        <h2>Популярные товары:</h2>
+        <div class="button"><a href="">все популярные товары</a></div>
+      </section>
+      <article class="makers">
+        <h2>Популярные производители:</h2>
+        <div class="button"><a href="">все производители</a></div>
+      </article>
+      <article class="service-block">
+        <h2 class="service">Сервисы</h2>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <ul class="service-list">
+          <li class="delivery-service">Доставка</li>
+          <!-- сlass="describe"> Доставка Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+            Ведь мы неплохо заработаем поднимая его на ваш этаж!-->
+          <li class="warranty">Гарантия</li>
+          <li class="credit">Кредит</li>
+        </ul>
+      </article>
+      <article class="company-block">
+        <h2 class="visually-hidden">Компания</h2>
+        <section class="company">
+        <h2>компания «техномарт»</h2>
+        <p>Настоящий мужской шоппинг начинается здесь!
+           Огромный выбор товаров для ремонта и строительства на оставит
+           равнодушным любителей сэкономить на гастарбайтерах</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+          Техномарт работает со многими транспортными компаниями:</p>
+          <ul>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+        <div class="button"><a href="">Подробнее о компании</a></div>
+      </section>
+      <section class="contacts">
+        <h2>контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис</p>
+          <div><img src="map.svg"  width="90" height="90" alt="карта с отметкой"></div>
+          <div class="button"><a href="">Заблудились? Напишите нам!</a></div>
+        </section>
+      </article>
     </main>
+    <footer class="page-footer">
+      <section class="footer-navigation">
+        <h2 class="visually-hidden">Техномарт</h2>
+        <div>
+            <img src="img/logo.svg" width="90" height="90" alt="логотип Техномарт">
+        </div>
+        <div class="footer-adress">г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8</div>
+        <div class="footer-phone">+7(812)555-05-55</div>
+        <nav class="footer-navigation">
+            <ul class="site-navigation">
+              <li><a href="company.html">Компания</a></li>
+              <li><a href="news.html">Новости</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="delivery.html">Доставка</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="catalog-navigation">
+              <li><a href="company.html">Материалы</a></li>
+              <li><a href="news.html">Техника</a></li>
+              <li><a href="catalog.html">Интсрумент</a></li>
+              <li><a href="delivery.html">Спецпредложения</a></li>
+            </ul>
+        </nav>
+      </section>
+      <section class="copyright">
+              © 2010—2017 Компания «Техномарт»
+              Все права защищены
+      </section>
+      <!--Здесь будут иконки vk,fb,instagram-->
+      <section class="info">
+          Обратная связь: mail@htmlacademy.ru
+          Разработано-htmlacademy.ru
+      </section>
+    </footer>
   </body>
 </html>
