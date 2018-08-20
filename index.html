@@ -12,7 +12,11 @@
           <a class="page-header-logo">
             <img src="img/logo.png" width="220" height="47" alt="логотип Техномарт">
           </a>
-          <span class="page-header-search">Поиск</span>
+
+          <form class="page-header-search" action="https://echo.htmlacademy.ru" method="get">
+            <input class="page-header-search-input" type="search" name="search" value="Поиск:">
+          </form>
+
           <ul class="page-header-purchase">
             <li class="page-header-purchase-tab">Закладки</li>
             <li class="page-header-purchase-busket">Корзина</li>
@@ -26,10 +30,12 @@
             <p class="header-middle-phone">+7(812)555-05-55</p>
             <p class="header-middle-address">г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8</p>
           </address>
-          <ul class="header-middle-user-navigation">
-            <li class="header-middle-login-link">Войти</li>
-            <li class="header-middle-registration-link">Регистрация</li>
-          </ul>
+          <form class="header-middle-user" action="https://echo.htmlacademy.ru" method="post">
+            <ul class="header-middle-user-navigation">
+              <li class="header-middle-login"><input class="header-middle-login-button" type="submit" value="Войти"></li>
+              <li class="header-middle-registration"><input class="header-middle-registration-button" type="submit" value="Регистрация"></li>
+            </ul>
+          </form>
       </section>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -211,5 +217,24 @@
               <a class="footer-feedback_link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
       </section>
     </footer>
+
+    <section class="modal write-us">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <span class="modal-close">x</span>
+      <form class="modal write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="modal write-us-name">
+          Ваше имя:<br><input type="text" name="name" value="Имя Фамилия">
+        </label><br>
+        <label class="modal write-us-email">
+          Ваш e-mail:<br><input type="text" name="email" value="email@example.com">
+        </label><br>
+        <label class="modal write-us-comment">
+          Текст письма:<br>
+           <textarea name="comment" rows="10">В свободной форме</textarea>
+        </label><br>
+        <input type="submit" value="Отправить">
+      </form>
+    </section>
+
   </body>
 </html>
