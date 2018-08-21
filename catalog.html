@@ -12,7 +12,9 @@
           <a class="page-header-logo">
             <img src="img/logo.png" width="220" height="47" alt="логотип Техномарт">
           </a>
-          <span class="page-header-search">Поиск</span>
+          <form class="page-header-search" action="https://echo.htmlacademy.ru" method="get">
+            <input class="page-header-search-input" type="search" name="search" placeholder="Поиск:">
+          </form>
           <ul class="page-header-purchase">
             <li class="page-header-purchase-tab">Закладки</li>
             <li class="page-header-purchase-busket">Корзина</li>
@@ -26,9 +28,10 @@
             <p class="header-middle-phone">+7(812)555-05-55</p>
             <p class="header-middle-address">г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8</p>
           </address>
-          <ul class="header-middle-user-navigation">
-            <li class="header-middle-login-link">Войти</li>
-            <li class="header-middle-registration-link">Регистрация</li>
+          <ul class="header-middle-logon">
+            <li class="header-middle-logon-user"><a href="user.html">Равшан Джамшутович</a></li>
+            <li class="header-middle-orders"><a href="orders.html">Мои заказы</a></li>
+            <li class="header-middle-account"><a href="account.html">Личный кабинет</a></li>
           </ul>
       </section>
       <nav class="main-navigation">
@@ -45,15 +48,58 @@
     </header>
       <main class="container">
         <ul class="breadcrumbs">
-          <li class="breadcrumbs-home"><a class="index-link" href="index.html"><!--Картинка?--></a></li>
+          <li class="breadcrumbs-home"><a class="index-link" href="index.html"></a></li>
           <li class="breadcrumbs-catalog"><a class="catalog-link" href="catalog.html">Каталог</a></li>
-          <li class="breadcrumbs-instruments"><a class="instruments-link" href="intruments.html"></a>Инструмент</li>
+          <li class="breadcrumbs-instruments"><a class="instruments-link" href="intruments.html">Инструмент</a></li>
           <li class="breadcrumbs-current">Перфораторы</li>
         </ul>
         <h2 class="catalog-section">Перфораторы</h2>
         <section class="filters">
             <h2 class="visually-hidden">фильтр товаров</h2>
-            <!--Здесь будет форма-->
+            <form class="filters" action="https://echo.htmlacademy.ru" method="get">
+              <fieldset class="filter-price">
+                <legend class="filter-price-title">Цена:</legend>
+                  <input class="filter-price-value" type="range" min="0" max="30000" step="1" value="25000"><br>
+                  <outpat class="filter-price-min">0</outpat>
+                  <outpat class="filter-price-max">30000</outpat>
+              </fieldset>
+              <fieldset class="filter-makers">
+                <legend class="filter-makers-title">Производители:</legend>
+                  <label>
+                    <input class="filter-makers-item" type=checkbox name="BOSCH" checked> BOSCH
+                  </label><br>
+                  <label>
+                    <input class="filter-maker-item" type=checkbox name="INTERSKOL"> ИНТЕРСКОЛ
+                  </label><br>
+                  <label>
+                    <input class="filter-maker-item" type=checkbox name="MAKITA" checked> MAKITA
+                  </label><br>
+                  <label>
+                    <input class="filter-maker-item" type=checkbox name="DEWALT"> DEWALT
+                  </label><br>
+                  <label>
+                    <input class="filter-maker-item" type=checkbox name="HITACHI"> HITACHI
+                  </label><br>
+              </fieldset>
+              <fieldset class="filter-power">
+                <legend class="filter-power-title">Питание:</legend>
+                  <label>
+                    <input class="filter-power-item" type=radio name="battery" checked> Аккумуляторные
+                  </label><br>
+                  <label>
+                    <input class="filter-power-item" type=radio name="electric"> Сетевые
+                  </label><br>
+              </fieldset>
+              <input type="submit" value="Отправить">
+            </form>
+        </section>
+        <section class="sort">
+          <h2 class="sort-title">Сортировка</h2>
+          <ul class="sort-list">
+            <li class="sort-item"><a class="sort-price" href="#">по цене</a></li>
+            <li class="sort-item"><a class="sort-type" href="#">по типу</a></li>
+            <li class="sort-item"><a class="sort-function" href="#">по функционалу</a></li>
+          </ul>
         </section>
         <section class="catalog">
               <ul class="catalog-list">
@@ -210,5 +256,14 @@
                   <a class="footer-feedback_link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
           </section>
       </footer>
+
+      <section class="modal notify">
+          <h2 class="notify-added">Товар добавлен в козину!</h2>
+          <span class="notify-close">x</span>
+          <form class="notify-buttons" action="https://echo.htmlacademy.ru" method="post">
+            <input type="button" value="Оформить заказ">
+            <input type="button" value="Продолжить покупки">
+          </form>
+        </section>
   </body>
 </html>

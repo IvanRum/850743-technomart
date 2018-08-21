@@ -14,7 +14,7 @@
           </a>
 
           <form class="page-header-search" action="https://echo.htmlacademy.ru" method="get">
-            <input class="page-header-search-input" type="search" name="search" value="Поиск:">
+            <input class="page-header-search-input" type="search" name="search" placeholder="Поиск:">
           </form>
 
           <ul class="page-header-purchase">
@@ -32,8 +32,8 @@
           </address>
           <form class="header-middle-user" action="https://echo.htmlacademy.ru" method="post">
             <ul class="header-middle-user-navigation">
-              <li class="header-middle-login"><input class="header-middle-login-button" type="submit" value="Войти"></li>
-              <li class="header-middle-registration"><input class="header-middle-registration-button" type="submit" value="Регистрация"></li>
+              <li class="header-middle-login"><button class="header-middle-login-button">Войти</button></li>
+              <li class="header-middle-registration"><button class="header-middle-registration-button">Регистрация</button></li>
             </ul>
           </form>
       </section>
@@ -150,7 +150,7 @@
                 <h3 class="credit-desribe-title">Кредит</h3>
                 <p class="credit-desribe-text">Залезть в долговую яму стало проще!
                   Кредитные консультанты придут вам на помощь.</p></span>
-                  <a class="credit-button" href="#">Отправить заявку</a>
+                  <button class="credit-button">Отправить заявку</button>
           </ul>
       </section>
       <section class="company">
@@ -186,6 +186,7 @@
           </address>
       </section>
       <section class="footer-right">
+        <h2>Разделы сайта</h2>
         <ul class="footer-navigation">
           <li class="footer-navigation-item"><a class="footer-navigation-link" href="company.html">Компания</a></li>
           <li class="footer-navigation-item"><a class="footer-navigation-link" href="news.html">Новости</a></li>
@@ -201,7 +202,7 @@
         </ul>
       </section>
       <section class="footer-bottom">
-        <h2 class="visually-hidden">Связь</h2>
+        <h2 class="visually-hidden">Как с нами связаться</h2>
           <p class="copyright">
             © 2010—2017 Компания «Техномарт»
             Все права защищены
@@ -222,16 +223,16 @@
       <h2 class="visually-hidden">Напишите нам</h2>
       <span class="modal-close">x</span>
       <form class="modal write-us-form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="modal write-us-name">
-          Ваше имя:<br><input type="text" name="name" value="Имя Фамилия">
-        </label><br>
-        <label class="modal write-us-email">
-          Ваш e-mail:<br><input type="text" name="email" value="email@example.com">
-        </label><br>
-        <label class="modal write-us-comment">
-          Текст письма:<br>
-           <textarea name="comment" rows="10">В свободной форме</textarea>
-        </label><br>
+
+        <label class="modal write-us-name" for="yourname">Ваше имя:</label><br>
+        <input type="text" name="name" id="yourname" placeholder="Имя Фамилия">
+
+        <label class="modal write-us-email" for="email"> Ваш e-mail: </label><br>
+          <input type="email" name="email" id="email" placeholder="email@example.com">
+
+        <label class="modal write-us-comment" for="comment">Текст письма:</label><br>
+           <textarea name="comment" rows="10" id="comment" placeholder="В свободной форме"></textarea><br>
+
         <input type="submit" value="Отправить">
       </form>
     </section>
