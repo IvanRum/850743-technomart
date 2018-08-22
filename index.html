@@ -12,9 +12,9 @@
           <a class="page-header-logo">
             <img src="img/logo.png" width="220" height="47" alt="логотип Техномарт">
           </a>
-
+          <label for="search"></label>
           <form class="page-header-search" action="https://echo.htmlacademy.ru" method="get">
-            <input class="page-header-search-input" type="search" name="search" placeholder="Поиск:">
+            <input class="page-header-search-input" type="search" name="search" id="search" placeholder="Поиск:">
           </form>
 
           <ul class="page-header-purchase">
@@ -30,12 +30,12 @@
             <p class="header-middle-phone">+7(812)555-05-55</p>
             <p class="header-middle-address">г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8</p>
           </address>
-          <form class="header-middle-user" action="https://echo.htmlacademy.ru" method="post">
+          <section class="header-middle-user">
             <ul class="header-middle-user-navigation">
               <li class="header-middle-login"><button class="header-middle-login-button">Войти</button></li>
               <li class="header-middle-registration"><button class="header-middle-registration-button">Регистрация</button></li>
             </ul>
-          </form>
+          </section>
       </section>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -224,14 +224,14 @@
       <span class="modal-close">x</span>
       <form class="modal write-us-form" action="https://echo.htmlacademy.ru" method="post">
 
-        <label class="modal write-us-name" for="yourname">Ваше имя:</label><br>
+        <label class="modal write-us-name" for="yourname">Ваше имя:</label>
         <input type="text" name="name" id="yourname" placeholder="Имя Фамилия">
 
-        <label class="modal write-us-email" for="email"> Ваш e-mail: </label><br>
+        <label class="modal write-us-email" for="email"> Ваш e-mail: </label>
           <input type="email" name="email" id="email" placeholder="email@example.com">
 
-        <label class="modal write-us-comment" for="comment">Текст письма:</label><br>
-           <textarea name="comment" rows="10" id="comment" placeholder="В свободной форме"></textarea><br>
+        <label class="modal write-us-comment" for="comment">Текст письма:</label>
+           <textarea name="comment" rows="10" id="comment" placeholder="В свободной форме"></textarea>
 
         <input type="submit" value="Отправить">
       </form>
