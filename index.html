@@ -12,8 +12,8 @@
           <a class="page-header-logo">
             <img src="img/logo.png" width="220" height="47" alt="логотип Техномарт">
           </a>
-          <label for="search"></label>
           <form class="page-header-search" action="https://echo.htmlacademy.ru" method="get">
+            <label for="search"></label>
             <input class="page-header-search-input" type="search" name="search" id="search" placeholder="Поиск:">
           </form>
 
@@ -31,6 +31,7 @@
             <p class="header-middle-address">г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8</p>
           </address>
           <section class="header-middle-user">
+            <h2 class="visually-hidden">Пользовательская навигация</h2>
             <ul class="header-middle-user-navigation">
               <li class="header-middle-login"><button class="header-middle-login-button">Войти</button></li>
               <li class="header-middle-registration"><button class="header-middle-registration-button">Регистрация</button></li>
@@ -221,7 +222,7 @@
 
     <section class="modal write-us">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <span class="modal-close">x</span>
+      <button class="notify-close"><span class="visually-hidden">Закрыть</span></button>
       <form class="modal write-us-form" action="https://echo.htmlacademy.ru" method="post">
 
         <label class="modal write-us-name" for="yourname">Ваше имя:</label>

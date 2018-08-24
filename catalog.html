@@ -12,8 +12,8 @@
           <a class="page-header-logo">
             <img src="img/logo.png" width="220" height="47" alt="логотип Техномарт">
           </a>
-          <label for="search"></label>
           <form class="page-header-search" action="https://echo.htmlacademy.ru" method="get">
+            <label for="search"></label>
             <input class="page-header-search-input" type="search" name="search" id="search" placeholder="Поиск:">
           </form>
           <ul class="page-header-purchase">
@@ -62,35 +62,33 @@
               <fieldset class="filter-price">
                 <legend class="filter-price-title">Цена:</legend>
                   <input class="filter-price-value" type="range" min="0" max="30000" step="1" value="25000">
+                  <div class="filter-price-main-line"></div>
+                  <div class="filter-price-color-line"></div>
+                  <span class="filter-price-min-roll"></span>
+                  <span class="filter-price-max-roll"></span>
+
                   <input type="text" class="filter-price-min" value="0">
                   <input type="text" class="filter-price-max" value="30000">
               </fieldset>
               <fieldset class="filter-makers">
                 <legend class="filter-makers-title">Производители:</legend>
-                  <label>
-                    <input class="filter-makers-item" type=checkbox name="BOSCH" checked> BOSCH
-                  </label>
-                  <label>
-                    <input class="filter-maker-item" type=checkbox name="INTERSKOL"> ИНТЕРСКОЛ
-                  </label>
-                  <label>
-                    <input class="filter-maker-item" type=checkbox name="MAKITA" checked> MAKITA
-                  </label>
-                  <label>
-                    <input class="filter-maker-item" type=checkbox name="DEWALT"> DEWALT
-                  </label>
-                  <label>
-                    <input class="filter-maker-item" type=checkbox name="HITACHI"> HITACHI
-                  </label>
+                  <label for="BOSCH">BOSCH</label>
+                    <input class="filter-makers-item" type=checkbox name="BOSCH" id="BOSCH" checked>
+                  <label for="ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
+                    <input class="filter-maker-item" type=checkbox name="INTERSKOL" id="ИНТЕРСКОЛ">
+                  <label for="MAKITA">MAKITA</label>
+                    <input class="filter-maker-item" type=checkbox name="MAKITA" id="MAKITA"  checked>
+                  <label for="DEWALT">DEWALT</label>
+                    <input class="filter-maker-item" type=checkbox name="DEWALT" id="DEWALT">
+                  <label for="HITACHI">HITACHI</label>
+                    <input class="filter-maker-item" type=checkbox name="HITACHI" id="HITACHI">
               </fieldset>
               <fieldset class="filter-power">
                 <legend class="filter-power-title">Питание:</legend>
-                  <label>
-                    <input class="filter-power-item" type=radio name="battery" checked> Аккумуляторные
-                  </label>
-                  <label>
-                    <input class="filter-power-item" type=radio name="electric"> Сетевые
-                  </label>
+                  <label for="battery">Аккумуляторные</label>
+                    <input class="filter-power-item" type=radio name="battery" id="battery" checked>
+                  <label for="electric">Сетевые</label>
+                    <input class="filter-power-item" type=radio name="electric" id="electric">
               </fieldset>
               <input type="submit" value="Отправить">
             </form>
@@ -101,6 +99,8 @@
             <li class="sort-item"><a class="sort-price" href="tehnomart.ru/catalog?ordered=desc">по цене</a></li>
             <li class="sort-item"><a class="sort-type" href="tehnomart.ru/catalog?ordered=desc">по типу</a></li>
             <li class="sort-item"><a class="sort-function" href="tehnomart.ru/catalog?ordered=desc">по функционалу</a></li>
+            <span class="visually-hidden">Сортировка по возрастанию/убыванию</span>
+            <li class="sort-item"><a class="sort-buttons" href="tehnomart.ru/catalog?ordered=asc"></a></li>
             <li class="sort-item"><a class="sort-buttons" href="tehnomart.ru/catalog?ordered=desc"></a></li>
           </ul>
         </section>
@@ -229,6 +229,7 @@
               </address>
           </section>
           <section class="footer-right">
+            <h2 class="visually-hidden">Нижняя навигация по сайту</h2>
             <ul class="footer-navigation">
               <li class="footer-navigation-item"><a class="footer-navigation-link" href="company.html">Компания</a></li>
               <li class="footer-navigation-item"><a class="footer-navigation-link" href="news.html">Новости</a></li>
@@ -241,6 +242,7 @@
               <li class="catalog-links-item"><a class="tech" href="tech.html">Техника</a></li>
               <li class="catalog-links-item"><a class="instruments" href="instruments.html">Инструмент</a></li>
               <li class="catalog-links-item"><a class="special-offer" href="specialoffer.html">Спецпредложения</a></li>
+            </ul>
           </section>
           <section class="footer-bottom">
             <h2 class="visually-hidden">Связь</h2>
@@ -262,7 +264,7 @@
 
       <section class="modal notify">
           <h2 class="notify-added">Товар добавлен в козину!</h2>
-          <span class="notify-close">x</span>
+            <button class="notify-close"><span class="visually-hidden">Закрыть</span></button>
             <input type="button" value="Оформить заказ">
             <input type="button" value="Продолжить покупки">
         </section>
