@@ -2,89 +2,204 @@
   margin: 0;
   padding: 0;
 
-  font-family: 'Cuprum', sans-serif;
-  font-weight: 700;
+  font-family: 'Cuprum', Arial, sans-serif;
   background-color: #f3f7f9;
 }
+
 .visually-hidden {
   visibility: hidden;
 }
-ul {
-  list-style: none;
-}
+
 .page-header-top {
   background-color: #293449;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
 }
+
+.page-header-purchase {
+  list-style: none;
+}
+
+.page-header-purchase a {
+  text-decoration: none;
+  color: #ffffff;
+
+}
+
+.page-header-purchase-order {
+  background-color: #63a63e;
+}
+
 .header-middle {
   background-color: #f3f7f9
 }
+
 .header-middle-description {
   font-style: italic;
   font-size: 17px;
   line-height: 23px;
   color: #ee3643;
 }
+
 .header-middle-phone {
   font-style: normal;
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
+  border: 3px solid #ffffff;
 }
+
 .header-middle-address {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
 }
-.header-middle-user {
+
+.header-middle-user-navigation {
+  list-style: none;
+}
+
+.header-middle-user-navigation a {
   font-size: 21px;
   line-height: 21px;
+  text-decoration: none;
   color: #000000;
+  background-color: #ffffff;
 }
+
+.header-middle-logon{
+  list-style: none;
+}
+
+.header-middle-logon a{
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+}
+.header-middle-logon-user a {
+  font-size: 21px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.container {
+  background-color: #ffffff;
+}
+
 .main-navigation {
   background-color: #293449;
 }
+
+.site-navigation{
+  list-style: none;
+}
+
 .main-navigation a {
   font-size: 17px;
   line-height: 17px;
-  color: #ffffff;
   text-decoration: none;
+  color: #ffffff;
 }
 
 .promo-block {
   background-color: #ffffff;
 }
+
+.promo-list {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.promo-list a {
+  font-size: 17px;
+  line-height: 17px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .promo-item {
   font-style: bold;
   font-size: 24px;
   line-height: 30px;
 }
+
+.promo-item.materials-promo {
+  background-color: #ffbf47;
+}
+
+.promo-item.instruments-promo {
+  background-color: #3bbce3;
+}
+
+.promo-item.tech-promo {
+  background-color: #dc91d8;
+}
+
+.promo-item.discounts-promo {
+  background-color: #8ed78f;
+}
+
+.promo-item.delivery-promo {
+  background-color: #ffc047;
+}
+
+.promo-item.drills-promo {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #513930;
+}
+
+.promo-item.drills-promo a {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
 .promo-link {
   font-size: 14px;
   line-height: 18px;
 }
+
 .popular-title {
   font-size: 30px;
   line-height: 30px;
   background-color: #f9f5f0;
   color: #32425c;
 }
+
+.popular-button {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
 .popular-list {
   background-color: #ffffff;
+  list-style: none;
 }
+
 .popular-item_title {
   font-family: 'PTsans', sans-serif;
   font-style: bold;
   font-size: 18px;
   line-height: 20px;
 }
+
 .popular-item {
   width: 220px;
   height: 317px;
   border: 1px solid lightgray;
 }
+
 .popular-item_old-price {
   font-family: 'PTsans', sans-serif;
   font-style: bold;
@@ -92,109 +207,439 @@ ul {
   line-height: 18px;
  color: #a9a9a9;
 }
+
+.popular-item_link {
+  font-family: 'PTsans', sans-serif;
+  font-style: bold;
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
 .makers-tittle {
   background-color: #f9f5f0;
   color: #32425c;
   font-size: 30px;
   line-height: 30px;
 }
+
+.makers-button {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
 .makers-list {
   background-color: #ffffff;
+  list-style: none;
 }
+
 .makers-item {
   width: 220px;
   height: 145px;
   border: 1px solid lightgray;
 }
+
 .service-block: {
   background-color: #f3f7f9;
 }
+
 .service-title {
   font-size: 30px;
   line-height: 30px;
 }
+
 .service-list {
   font-size: 21px;
   line-height: 30px;
   background-color: #32425c;
   color: #ffffff;
+  list-style: none;
 }
+
 .service-describe {
   font-family: 'PTsans', sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
+
 .service-list-delivery-title {
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
 }
+
 .service-list-delivery-text {
   font-family: 'PTsans', sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
+
 .service-list-warranty-title {
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
 }
+
 .service-list-warranty-text {
   font-family: 'PTsans', sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
+
 .service-list-credit-title {
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
 }
+
 .service-list-credit-text {
   font-family: 'PTsans', sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
+.service-list-items {
+  list-style: none;
+}
+
+.service-list-items a {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
 .company {
   background-color: #ffffff;
 }
+
 .company-title {
   font-size: 30px;
   line-height: 30px;
 }
+
 .company-describe {
   font-size: 13px;
   line-height: 24px;
 }
+
+.transport-list {
+  list-style: none;
+}
+
 .transport-list-item {
   font-size: 18px;
   line-height: 20px;
 }
+
+.button-aboutus {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
 .contacts-title {
   font-size: 30px;
   line-height: 30px;
 }
+
 .contacts-desription {
   font-size: 13px;
   line-height: 24px;
 }
+
+.button-map {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
 .page-footer {
   background-color: #32425c;
 }
+
 .footer-contacts {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
 }
+
 .footer-navigation {
+  list-style: none;
+}
+
+.footer-navigation a {
   font-size: 18px;
   line-height: 24px;
+  text-decoration: none;
   color: #ffffff;
 }
+
 .catalog-links {
+  list-style: none;
+}
+
+.catalog-links a {
   font-size: 18px;
   line-height: 24px;
+  text-decoration: none;
   color: #ffd180;
 }
+
 .footer-bottom {
     background-color: #293449;
-  }
+}
+
+.copyright {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.footer-feedback_mail {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.footer-feedback_mail-link {
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #ffd180;
+}
+
+.footer-feedback_powered-by {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.footer-feedback_link {
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #ffd180;
+}
+.modal {
+  background-color: #ffffff;
+}
+
+.modal .write-us {
+  font-size: 18px;
+  line-height: 18px;
+}
+.modal-submit {
+  font-size: 17px;
+  line-height: 17px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ee3643
+}
+
+.breadcrumbs {
+ list-style: none;
+}
+
+.breadcrumbs a {
+  font-family: 'PTsans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000000;
+}
+.catalog-section {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+.filters-title {
+  font-size: 13px;
+  line-height: 18px;
+  background-color: #f7f3ec;
+}
+
+.filter-price-title {
+  font-family: 'PTsans', sans-serif;
+  font-style: bold;
+  font-size: 17px;
+  line-height: 30px;
+  background-color: #ffffff;
+}
+
+.filter-price-value {
+  background-color: #f7f3ec;
+}
+
+.filter-price-min{
+  background-color: #f7f3ec;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.filter-price-max{
+  background-color: #f7f3ec;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.filter-makers {
+  font-family: 'PTsans', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.filter-makers-title {
+  font-family: 'PTsans', sans-serif;
+  font-style: bold;
+  font-size: 17px;
+  line-height: 30px;
+  background-color: #ffffff;
+}
+.filter-power {
+  font-family: 'PTsans', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.filter-power-title {
+  font-family: 'PTsans', sans-serif;
+  font-style: bold;
+  font-size: 17px;
+  line-height: 30px;
+  background-color: #ffffff;
+}
+
+.show-button {
+  font-family: 'PTsans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: #ffffff;
+}
+.sort-title {
+  font-size: 13px;
+  line-height: 18px;
+  background-color: #f7f3ec
+}
+
+.sort-list{
+  list-style: none;
+}
+
+.sort-item a {
+  font-size: 13px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.catalog-item_title {
+  font-family: 'PTsans', sans-serif;
+  font-style: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.catalog-list {
+ list-style: none;
+}
+
+.catalog-item {
+  width: 220px;
+  height: 317px;
+  border: 1px solid lightgray;
+}
+
+.catalog-item-new {
+  width: 220px;
+  height: 317px;
+  border: 1px solid lightgray;
+}
+
+.catalog-item_old-price {
+  font-family: 'PTsans', sans-serif;
+  font-style: bold;
+  font-size: 17px;
+  line-height: 18px;
+ color: #a9a9a9;
+}
+
+.catalog-item_link {
+  font-family: 'PTsans', sans-serif;
+  font-style: bold;
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
+.catalog-item_offer a {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none
+}
+
+.catalog-item_buy {
+  background-color: #63a63e;
+  color: #ffffff;
+}
+
+.catalog-item_marked {
+  background-color: #ffffff;
+  color:#000000;
+  border: 1px solid #63a63e;
+}
+
+.pagination-list {
+ list-style: none;
+}
+
+.pagination-list a {
+  font-family: 'PTsans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.about-perforators {
+  background-color: #f2f6f8;
+}
+
+.perforators-title {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.perforators-description {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.notify-added {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.modal-place-order {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+.modal-continue-shopping {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ffffff;
+}
+

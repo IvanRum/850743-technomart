@@ -5,6 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" >
+    <link href="css/normalize.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -20,9 +21,9 @@
           </form>
 
           <ul class="page-header-purchase">
-            <li class="page-header-purchase-tab">Закладки</li>
-            <li class="page-header-purchase-busket">Корзина</li>
-            <li class="page-header-purchase-order">Оформить заказ</li>
+            <li class="page-header-purchase-tab"><a class="page-header-tab-link" href="tab.html">Закладки</a></li>
+            <li class="page-header-purchase-busket"><a class="page-header-busket-link" href="busket.html">Корзина</a></li>
+            <li class="page-header-purchase-order"><a class="page-header-order-link" href="order.html">Оформить заказ</a></li>
           </ul>
       </section>
       <section class="header-middle">
@@ -35,8 +36,8 @@
           <section class="header-middle-user">
             <h2 class="visually-hidden">Пользовательская навигация</h2>
             <ul class="header-middle-user-navigation">
-              <li class="header-middle-login"><button class="header-middle-login-button">Войти</button></li>
-              <li class="header-middle-registration"><button class="header-middle-registration-button">Регистрация</button></li>
+              <li class="header-middle-login"><a class="header-middle-login-button" href="authorisation.html">Войти</button></li>
+              <li class="header-middle-registration"><a class="header-middle-registration-button" href="registration.html">Регистрация</button></li>
             </ul>
           </section>
       </section>
@@ -52,20 +53,18 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="container">
       <section class="promo-block">
         <h2 class="visually-hidden">Промо-блок</h2>
           <ul class="promo-list">
-            <li class="promo-item">Материалы<a class="promo-link" href="catalog/materials.html">На любой вкус</a></li>
-            <li class="promo-item">Инструменты<a class="promo-link" href="catalog/instruments.html">На все случаи</a></li>
-            <li class="promo-item">Техника<a class="promo-link" href="catalog/tech.html">Для стройки</a></li>
-            <li class="promo-item">Дрели Соседям на радость!<a class="button-drills" href="catalog/instruments/drills.html">Открыть каталог</a>
-              <img src="img/drills.jpg" width="620" height="266" alt="промо-картинка дрели">
-            </li>
-
-            <li class="promo-item">Скидки 50%<a class="promo-link" href="catalog/discounts.html">На 350 товаров</a></li>
+            <li class="promo-item materials-promo">Материалы<a class="promo-link" href="catalog/materials.html">На любой вкус</a></li>
+            <li class="promo-item instruments-promo">Инструменты<a class="promo-link" href="catalog/instruments.html">На все случаи</a></li>
+            <li class="promo-item tech-promo">Техника<a class="promo-link" href="catalog/tech.html">Для стройки</a></li>
+            <li class="promo-item discounts-promo">Скидки 50%<a class="promo-link" href="catalog/discounts.html">На 350 товаров</a></li>
+            <li class="promo-item delivery-promo">Доставка<a class="promo-link" href="#Доставка">Бесплатно</a></li>
           </ul>
-          <div class="promo-item">Доставка<a class="promo-link" href="#Доставка">Бесплатно</a></div>
+          <div class="promo-item drills-promo">Дрели Соседям на радость!<a class="button-drills" href="catalog/instruments/drills.html">Открыть каталог</a>
+            <img src="img/drills.jpg" width="620" height="266" alt="промо-картинка дрели"></div>
       </section>
       <section class="popular">
             <h2 class="popular-title">Популярные товары:</h2>
@@ -104,7 +103,7 @@
                       <button class="popular-item_marked">В закладки</button>
                     </div>
                 </li>
-                <li class="popular-item-new">
+                <li class="popular-item new">
                   <img src="img/BOSCH-BFG-2000.jpg" alt="BOSCH BFG 2000"
                   width="220" height="150" class="popular-item_image_bfg2000">
                   <h3 class="popular-item_title">Перфоратор BOSCH BFG 2000</h3>
@@ -157,7 +156,7 @@
                 <h3 class="service-list-credit-title">Кредит</h3>
                 <p class="service-list-credit-text">Залезть в долговую яму стало проще!
                   Кредитные консультанты придут вам на помощь.</p>
-                  <button class="credit-button">Отправить заявку</button></li>
+                  <a class="credit-button" href="application.html">Отправить заявку</a></li>
           </ul>
       </section>
       <section class="company">
@@ -193,7 +192,7 @@
           </address>
       </section>
       <section class="footer-right">
-        <h2>Разделы сайта</h2>
+        <h2 class="visually-hidden">Разделы сайта</h2>
         <ul class="footer-navigation">
           <li class="footer-navigation-item"><a class="footer-navigation-link" href="company.html">Компания</a></li>
           <li class="footer-navigation-item"><a class="footer-navigation-link" href="news.html">Новости</a></li>
@@ -240,7 +239,8 @@
         <label class="modal write-us-comment" for="comment">Текст письма:</label>
            <textarea name="comment" rows="10" id="comment" placeholder="В свободной форме"></textarea>
 
-        <input type="submit" value="Отправить">
+        <label for="submit"></label>
+        <input class="modal-submit" type="submit" name="submit" id="submit" value="Отправить">
       </form>
     </section>
 
