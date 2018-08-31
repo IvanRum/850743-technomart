@@ -6,15 +6,29 @@
 }
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.page-header {
+  margin-bottom: 60px;
+
+  min-height: 320px;
+  background-color: #f3f7f9
 }
 
 .page-header-logo{
+
   width: 220px;
   height: 42px;
 
   background-color: #ee3643;
+  box-shadow: 0 5px 0px #b52933;
 }
+
 .page-header-logo img{
   position: relative;
    top: 12px;
@@ -30,8 +44,19 @@
   background-color: #ba2732;
 }
 
-.page-footer-logo{
+.page-footer-logo {
+  width: 220px;
+  height: 63px;
+
   background-color: #ee3643;
+  box-shadow: 0 5px 0px #b52933;
+}
+
+.page-footer-logo img {
+   position: relative;
+   top: 21px;
+   left: 42px;
+
 }
 
 .page-footer-logo:hover{
@@ -43,11 +68,16 @@
 }
 
 .page-header-top {
+  height: 42px;
+
+  margin-bottom: 0 auto;
+  padding: 0;
+
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
 
-  height: 42px;
 
   background-color: #32425c;
   font-size: 17px;
@@ -56,6 +86,15 @@
 }
 
 .page-header-search-input {
+  margin: 0 auto;
+  padding: 0;
+
+
+  flex-direction: row;
+  justify-content: flex-start;
+
+  width: 270px;
+
   background-color: #32425c;
   color: #ffffff;
   border: none;
@@ -75,8 +114,6 @@
 
 .page-header-purchase {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
 
   list-style: none;
 }
@@ -84,7 +121,10 @@
 .page-header-purchase a {
   text-decoration: none;
   color: #ffffff;
+}
 
+.page-header-purchase-tab {
+  width: 150px;
 }
 
 .page-header-purchase-tab:hover {
@@ -96,6 +136,11 @@
   color: #494c53;
 }
 
+.page-header-purchase-busket {
+  width: 150px;
+}
+
+
 .page-header-purchase-busket:hover {
   background-color: #212a3a;
 }
@@ -106,6 +151,7 @@
 }
 
 .page-header-purchase-order {
+  width: 150px;
   background-color: #63a63e;
 }
 
@@ -119,22 +165,36 @@
 }
 
 .header-middle {
+  margin-top: 0;
+  padding: 0;
+  min-height: 158;
+
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-  height: 158px;
-
-  background-color: #f3f7f9
-
+  background-color: #f3f7f9;
 }
 
 .header-middle-description {
+  margin-top: 50px;
+  margin-left: 0;
+  padding: 0;
+
+  width: 205px;
+
   font-style: italic;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 23px;
   color: #ee3643;
 }
 
 .header-middle-phone {
+  margin-top: 45px;
+
+  width: 270px;
+  height: 43px;
+
   font-style: normal;
   font-size: 21px;
   line-height: 21px;
@@ -149,6 +209,7 @@
 }
 
 .header-middle-user-navigation {
+  margin-top: 45px;
   display: flex;
 
   list-style: none;
@@ -215,21 +276,27 @@
    color: #b2b2b2;
  }
 
-.container {
-  background-color: #ffffff;
-}
-
 .main-navigation {
   background-color: #32425c;
 }
 
 .site-navigation{
+  margin: 0 auto;
+  padding: 0;
   display: flex;
-  justify-content: space-around;
 
-  height: 60px;
+  justify-content: center;
+
+
+  min-height: 60px;
 
   list-style: none;
+}
+
+.site-navigation-item {
+  min-width: 100px;
+  padding: 20px;
+  text-align: center;
 }
 
 .site-navigation-item a:hover{
@@ -248,10 +315,17 @@
 }
 
 .promo-block {
+
   background-color: #ffffff;
 }
 
 .promo-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
@@ -265,6 +339,9 @@
 }
 
 .promo-item {
+  margin: 20px;
+  width: 300px;
+  height: 123px;
   font-style: bold;
   font-size: 24px;
   line-height: 30px;
@@ -648,6 +725,10 @@
 
 .page-footer {
   background-color: #32425c;
+}
+
+.footer-left {
+  display: flex;
 }
 
 .footer-contacts {
