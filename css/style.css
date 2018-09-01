@@ -37,7 +37,7 @@
 .page-header-logo img{
   position: relative;
    top: 12px;
-   left: 54px;
+   left: 55px;
 
 }
 
@@ -73,18 +73,17 @@
 }
 
 .page-header-wrapper-top {
+
   background-color: #32425c;
 }
 
 .page-header-top {
   height: 42px;
 
-  margin-bottom: 0 auto;
+  margin-bottom: 45px;
   padding: 0;
 
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
 
   font-size: 17px;
@@ -100,7 +99,7 @@
   flex-direction: row;
   justify-content: flex-start;
 
-  width: 270px;
+
 
   background-color: #32425c;
   color: #ffffff;
@@ -121,6 +120,7 @@
 
 .page-header-purchase {
   display: flex;
+  padding-left: 100px;
 
   list-style: none;
 }
@@ -173,6 +173,7 @@
 
 .header-middle {
   margin-top: 0;
+  margin-bottom: 45px;
   padding: 0;
   min-height: 158;
 
@@ -182,11 +183,11 @@
 }
 
 .header-middle-description {
-  margin-top: 50px;
-  margin-left: 52px;
-  padding: 0;
+  margin: 0px;
 
-  width: 205px;
+  margin-left: 55px;
+  margin-right: 70px;
+  padding-top: 3px;
 
   font-style: italic;
   font-size: 16px;
@@ -194,12 +195,13 @@
   color: #ee3643;
 }
 
-.header-middle-phone {
-  margin-top: 45px;
-  margin-bottom: 10px;
+.header-middle-contacts {
+  margin-right: -5px;
+}
 
-  width: 270px;
-  height: 43px;
+.header-middle-phone {
+  margin: 0px;
+
 
   font-style: normal;
   font-size: 21px;
@@ -210,24 +212,32 @@
 
 .header-middle-address {
   margin: 0;
+  font-style: normal;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
 }
 
 .header-middle-user-navigation {
-  margin-top: 45px;
   display: flex;
+
 
   list-style: none;
 }
 
 .header-middle-user-navigation a {
+  min-width: 120px;
   font-size: 21px;
   line-height: 21px;
   text-decoration: none;
   color: #000000;
   background-color: #ffffff;
+}
+
+.header-middle-login a {
+  margin: 0px;
+  margin-right: 10px;
+
 }
 
 .header-middle-login a:hover {
@@ -236,6 +246,10 @@
 
 .header-middle-login a:active {
   color: #b2b2b2
+}
+
+.header-middle-registration a {
+
 }
 
 .header-middle-registration a:hover {
@@ -292,7 +306,7 @@
   padding: 0;
   display: flex;
 
-  justify-content: center;
+  justify-content: space-evenly;
 
 
   min-height: 60px;
@@ -301,9 +315,8 @@
 }
 
 .site-navigation-item {
-  min-width: 100px;
   padding: 20px;
-  text-align: center;
+
 }
 
 .site-navigation-item a:hover{
@@ -322,12 +335,14 @@
 }
 
 .promo-block {
-
+  display: flex;
   background-color: #ffffff;
 }
 
-.promo-list {
+.promo-list-1 {
   margin: 0;
+  margin-left: -20px;
+  margin-top: -24px;
   padding: 0;
 
   display: flex;
@@ -340,7 +355,13 @@
   color: #ffffff;
 }
 
-.promo-list a {
+.promo-list-2 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.promo-link {
   font-size: 17px;
   line-height: 17px;
   text-decoration: none;
@@ -348,7 +369,7 @@
 }
 
 .promo-item {
-  margin: 20px;
+
   width: 300px;
   height: 123px;
   font-style: bold;
@@ -357,6 +378,9 @@
 }
 
 .promo-item.materials-promo {
+
+  margin-right: 20px;
+  margin-bottom: 20px;
   background-color: #ffbf47;
 }
 
@@ -373,6 +397,7 @@
 }
 
 .promo-item.instruments-promo {
+  margin-bottom: 20px;
   background-color: #3bbce3;
 }
 
@@ -389,6 +414,8 @@
 }
 
 .promo-item.tech-promo {
+  margin: 0;
+  margin-bottom: 20px;
   background-color: #dc91d8;
 }
 
@@ -405,6 +432,8 @@
 }
 
 .promo-item.discounts-promo {
+  margin: 0;
+  margin-bottom: 20px;
   background-color: #8ed78f;
 }
 
@@ -421,6 +450,8 @@
 }
 
 .promo-item.delivery-promo {
+  margin: 0;
+  margin-bottom: 20px;
   background-color: #ffc047;
 }
 
@@ -437,6 +468,10 @@
 }
 
 .promo-item.drills-promo {
+  margin: 0;
+  width:620px;
+  height: 266px;
+
   font-family: PTsans;
   font-size: 18px;
   line-height: 24px;
@@ -451,7 +486,7 @@
   line-height: 36px;
 }
 
-.promo-item.drills-promo a {
+.button-drills {
   font-family: Cuprum;
   font-size: 14px;
   line-height: 18px;
@@ -473,7 +508,14 @@
   line-height: 18px;
 }
 
+.popular {
+
+}
+
 .popular-title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 25px;
   font-size: 30px;
   line-height: 30px;
   background-color: #f9f5f0;
@@ -498,6 +540,8 @@
 }
 
 .popular-list {
+  display: flex;
+  padding: 0;
   background-color: #ffffff;
   list-style: none;
 }
@@ -510,9 +554,9 @@
 }
 
 .popular-item {
-  margin: 20px;
+  margin-right: 18px;
   width: 220px;
-  height: 317px;
+  min-height: 317px;
   border: 1px solid lightgray;
 }
 .popular-item:hover {
@@ -537,6 +581,9 @@
 }
 
 .makers-tittle {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 25px;
   background-color: #f9f5f0;
   color: #32425c;
   font-size: 30px;
@@ -561,14 +608,21 @@
 }
 
 .makers-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-right: -20px;
+  margin-bottom: 85px;
   background-color: #ffffff;
   list-style: none;
 }
 
 .makers-item {
-  margin: 30px;
+
+  margin-bottom: 18px;
+  margin-right: 18px;
   width: 220px;
-  height: 145px;
+  min-height: 145px;
   border: 1px solid lightgray;
 }
 
@@ -581,16 +635,20 @@
   opacity: 0.25;
 }
 
-.service-block {
+
+.service-block-wrapper  {
   background-color: #f3f7f9;
 }
 
 .service-title {
+  padding-top: 67px;
   font-size: 30px;
   line-height: 30px;
 }
 
 .service-list {
+  padding-left: 0;
+  width: 240px;
   font-size: 21px;
   line-height: 30px;
   background-color: #32425c;
@@ -607,6 +665,8 @@
 }
 
 .service-describe {
+  margin-bottom: 74px;
+  width: 430px;
   font-family: 'PTsans', sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -677,6 +737,12 @@
 }
 
 .company-describe {
+  width: 540px;
+  font-size: 13px;
+  line-height: 24px;
+}
+.company-describe-2 {
+  width: 400px;
   font-size: 13px;
   line-height: 24px;
 }
@@ -1012,7 +1078,7 @@
 }
 
 .catalog-item-new {
-  margin: 20px;
+
   width: 220px;
   height: 317px;
   border: 1px solid lightgray;
