@@ -128,6 +128,7 @@
   display: flex;
   padding-left: 0;
   margin-left: auto;
+  text-align: center;
 
 
   list-style: none;
@@ -215,12 +216,13 @@
 .header-middle-contacts {
   width: 268px;
   margin-top: 3px;
+  margin-right: 70px;
 }
 
 .header-middle-phone {
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
   padding-left: 23px;
   margin: 0px;
   margin-bottom: 3px;
@@ -243,19 +245,21 @@
 }
 
 .header-middle-user {
-  margin-left: auto;
-  margin-top: 20px;
+  margin-right: 0px;
+
+  margin-top: 4px;
 }
 
 .header-middle-user-navigation {
   display: flex;
-  padding-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
   list-style: none;
+  margin-top: 10px;
+  padding-left: 0px;
 }
 
 .header-middle-user-navigation a {
+  padding-bottom: 7px;
+  margin-top: -4px;
 
   font-size: 21px;
   line-height: 21px;
@@ -264,13 +268,18 @@
   background-color: #ffffff;
 }
 
+.header-middle-login {
+  width: 120px;
+  margin-right: 10px;
+}
+
 .header-middle-login a {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 7px;
+  padding-bottom: 12px;
   padding-left: 47px;
   padding-right: 27px;
-  margin: 0px;
   margin-right: 10px;
+
 
 }
 
@@ -282,11 +291,15 @@
   color: #b2b2b2
 }
 
+.header-middle-registration {
+  width: 150px;
+}
+
 .header-middle-registration a {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 7px;
+  padding-bottom: 12px;
   padding-left: 25px;
-  padding-right: 25px;
+  padding-right: 19px;
   margin: 0px;
 
 }
@@ -354,11 +367,7 @@
   list-style: none;
 }
 
-.site-navigation-item {
-}
-.site-navigation-item a {
 
-}
 
 .site-navigation-item a:hover{
   background-color: #293449;
@@ -564,6 +573,42 @@
   margin-top: -83px;
 }
 
+.promo-item.perforators-promo {
+  display: none;
+  position: relative;
+  z-index: 1;
+  top: -20px;
+  margin: 0;
+  width:620px;
+  height: 266px;
+
+  font-family: PTsans;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #513930;
+}
+
+.promo-item.perforators-promo img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.promo-item.perforators-title {
+  margin: 0;
+  padding: 0;
+  font-family: Cuprum;
+  font-style: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+.promo-item.perforators-promo p {
+  display: block;
+  margin-top: -83px;
+}
+
 .button-drills {
   display: block;
   margin-top: 120px;
@@ -580,11 +625,11 @@
   color: #ffffff;
 }
 
-.promo-item.drills-promo a:hover{
+.button-drills:hover{
   background-color: #ca2c37;
 }
 
-.promo-item.drills-promo a:active{
+.button-drills:active{
   background-color: #ba2732;
 }
 
@@ -652,6 +697,18 @@
   font-style: bold;
   font-size: 18px;
   line-height: 20px;
+  text-align: center;
+  margin-top: 26px;
+}
+
+.popular-item_new-title {
+  text-align: center;
+  margin-top: 26px;
+  margin-bottom: 50px;
+  font-family: 'PTsans', sans-serif;
+  font-style: bold;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .popular-item {
@@ -665,6 +722,7 @@
 }
 
 .popular-item_old-price {
+  padding-left: 78px;
   font-family: 'PTsans', sans-serif;
   font-style: bold;
   font-size: 17px;
@@ -673,6 +731,7 @@
 }
 
 .popular-item_link {
+  margin-left: 78px;
   font-family: 'PTsans', sans-serif;
   font-style: bold;
   font-size: 17px;
@@ -1111,10 +1170,54 @@
   color: #ffd180;
 }
 .modal-write-us {
-  display: flex;
+  display: none;
+  position: fixed;
+  top: 5%;
+  left: 26%;
+  z-index: 1;
+
+  width: 620px;
+  margin: 0 auto;
   justify-content: center;
   background-color: #ffffff;
+  font-size: 18px;
+  line-height: 18px;
 }
+
+.modal-write-us-form {
+  box-shadow: 0 10px 20px #adb1b9;
+  border-top: 6px solid #ff5357;
+
+}
+
+.modal-input-title {
+  margin-bottom: 13px;
+}
+
+.modal-personal-dates {
+  display: flex;
+  padding-left: 80px;
+
+}
+.modal-personal-dates p {
+  display: flex;
+  flex-direction: column;
+  width: 220px
+}
+.modal-personal-dates input{
+  height:34px;
+  padding-left: 15px;
+  font-family: PTsans;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.modal-personal-dates p:first-child {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
 .modal-write-us-form input {
   border: 2px solid #d7dcde;
 }
@@ -1134,11 +1237,42 @@
   border: 2px solid #ee3643;
 }
 
-.modal-write-us {
-  font-size: 18px;
+.modal-write-us-form p {
+  flex-direction: column;
+  display: flex;
+}
+
+.modal-message {
+  padding-left: 80px;
+}
+
+.modal-write-us-form textarea {
+  width: 442px;
+  height: 110px;
+  padding-left: 13px;
+  padding-top: 11px;
+  margin-bottom: 35px;
+  font-family: PTsans;
+  font-size: 13px;
   line-height: 18px;
 }
+
+.form-footer {
+  background-color: #f4f4f4;
+  padding-top: 37px;
+  padding-bottom: 37px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
 .modal-submit {
+  display: block;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 460px;
+  text-align: center;
+  border: none;
   font-size: 17px;
   line-height: 17px;
   text-decoration: none;
@@ -1287,7 +1421,9 @@
   box-shadow: 0 10px 20px #adb1b9;
 }
 
-.catalog-item-new {
+.catalog-item_new-title {
+  margin-bottom: 50px;
+}
 
   width: 220px;
   height: 317px;
@@ -1315,15 +1451,29 @@
   color: #ffffff;
 }
 
+.catalog-item_offer{
+  text-align: center;
+  display: none;
+}
+
 .catalog-item_offer a {
   font-size: 14px;
   line-height: 18px;
-  text-decoration: none
+  text-decoration: none;
+
+}
+.catalog-item_offer p{
+  margin-bottom: 35px;
 }
 
 .catalog-item_buy {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 50px;
+  padding-right: 45px;
   background-color: #63a63e;
   color: #ffffff;
+  box-shadow: 0 5px 0px #367315;
 }
 
 .catalog-item_buy:hover {
@@ -1335,17 +1485,21 @@
 }
 
 .catalog-item_marked {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 33px;
+  padding-right: 32px;
   background-color: #ffffff;
   color:#32425c;
-  border: 1px solid #63a63e;
+  border: 3px solid #63a63e;
 }
 
 .catalog-item_marked:hover {
-  border: 1px solid #32425c;
+  border: 3px solid #32425c;
 }
 
 .catalog-item_marked:active  {
-  border: 1px solid #c1c6ce;
+  border: 3px solid #c1c6ce;
   color:#d6d8dc;
 }
 
