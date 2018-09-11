@@ -180,8 +180,8 @@
 }
 
 .page-header-tab-link {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 44px;
   padding-right: 40px;
   letter-spacing: -0.1px;
@@ -230,8 +230,8 @@
 }
 
 .page-header-busket-link{
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12px;
+    padding-bottom: 12px;
   padding-right: 46px;
   padding-left: 49px;
   letter-spacing: -0.1px;
@@ -894,7 +894,7 @@
   width:620px;
   height: 266px;
 
-  font-family: 'PTsans';
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -1102,7 +1102,7 @@
   margin-top: 11px;
   margin-bottom: 19px;
   padding-left: 80px;
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -1112,7 +1112,7 @@
 
 .popular-item-link {
   position: relative;
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -1289,7 +1289,7 @@
 .service-describe {
   margin-bottom: 70px;
   width: 408px;
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: -0.3px;
@@ -1316,7 +1316,7 @@
 .service-list-delivery-text {
   margin-right: 330px;
 
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: -0.4px;
@@ -1343,7 +1343,7 @@
 
 .service-list-warranty-text {
   width: 389px;
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: -0.3px;
@@ -1369,7 +1369,7 @@
 }
 
 .service-list-credit-text {
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 24px;
   width: 280px;
@@ -1428,7 +1428,7 @@
 .company-describe {
   margin-bottom: 24px;
   width: 540px;
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: -0.3px;
@@ -1436,7 +1436,7 @@
 .company-describe-2 {
   margin-bottom: 21px;
   width: 400px;
-  font-family: 'PTsans',sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: -0.4px;
@@ -1534,7 +1534,7 @@
 .contacts-desription {
   padding-right: 107px;
   margin-bottom: 30px;
-  font-family: 'PTsans',sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: -0.5px;
@@ -1850,7 +1850,7 @@ border-radius: 50px;
 .modal-personal-dates input{
   height:34px;
   padding-left: 15px;
-  font-family: 'PTsans';
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -1906,7 +1906,7 @@ border-radius: 50px;
   padding-left: 13px;
   padding-top: 11px;
   margin-bottom: 35px;
-  font-family: 'PTsans';
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -2028,7 +2028,7 @@ border-radius: 50px;
 
 
 .breadcrumbs a {
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-decoration: none;
@@ -2062,7 +2062,7 @@ border-radius: 50px;
   width: 201px;
     border-radius: 3px;
   letter-spacing: -1px;
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   margin-bottom: 12px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2087,7 +2087,7 @@ border-radius: 50px;
   margin-bottom: 22px;
   letter-spacing: -1px;
 
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
@@ -2189,7 +2189,7 @@ border-radius: 50px;
   padding-left: 0px;
   margin-bottom: 17px;
   margin-left: 0px;
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 15px;
   line-height: 20px;
   border-bottom: 1px solid #c5c5c5;
@@ -2239,7 +2239,7 @@ border-radius: 50px;
 
 .filter-makers-title {
   letter-spacing: -1.6px;
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
@@ -2255,7 +2255,7 @@ border-radius: 50px;
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 58px;
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 15px;
   line-height: 20px;
 }
@@ -2292,7 +2292,7 @@ border-radius: 50px;
 
 .filter-power-title {
   letter-spacing: -1px;
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
@@ -2311,7 +2311,7 @@ border-radius: 50px;
   padding-bottom: 10px;
   padding-left: 0px;
   padding-right: 0px;
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 18px;
   background-color: #ffffff;
@@ -2333,7 +2333,7 @@ background-color: #f7f3ec;
 
 .sort-title {
   letter-spacing: -1px;
-    font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
     margin-right: 142px;
   margin-left: 20px;
   margin-top: 0px;
@@ -2370,7 +2370,7 @@ background-color: #f7f3ec;
 .sort-item-link {
   letter-spacing: -1px;
   margin-right: 70px;
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-decoration: none;
@@ -2496,7 +2496,7 @@ background-color: #f7f3ec;
   margin-top: 14px;
   margin-bottom: 18px;
   padding-left: 80px;
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -2507,7 +2507,7 @@ background-color: #f7f3ec;
 
 .catalog-item-link {
   position: relative;
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -2638,7 +2638,7 @@ background-color: #f7f3ec;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-decoration: none;
@@ -2689,7 +2689,7 @@ background-color: #f7f3ec;
 .perforators-description {
   letter-spacing: -0.26px;
   padding-bottom: 68px;
-  font-family: 'PTsans', sans-serif;
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
