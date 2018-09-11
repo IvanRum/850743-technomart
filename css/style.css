@@ -834,6 +834,7 @@
 
 .promo-slider {
   position: relative;
+  margin-top: 6px;
 }
 
 
@@ -923,7 +924,7 @@
 
 .button-drills {
   display: block;
-  margin-top: 122px;
+  margin-top: 120px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 7px;
@@ -947,17 +948,36 @@
   background-color: #ba2732;
 }
 
-.promo-slider-controls {
+
+.slider-radio-1 {
+  content: "";
   position: absolute;
   z-index: 60;
-  bottom: 55px;
-  left: 282px;
+  bottom: 58px;
+  left: 295px;
   width: 60px;
   height: 10px;
   text-align: center;
-  }
+  margin-right: 5px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  vertical-align: top;
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
-  .promo-slider-controls label {
+  .slider-radio-2 {
+    content: "";
+    position: absolute;
+    z-index: 60;
+    bottom: 58px;
+    left: 315px;
+    width: 60px;
+    height: 10px;
+    text-align: center;
     margin-right: 5px;
     display: inline-block;
     width: 6px;
@@ -969,26 +989,32 @@
     cursor: pointer;
   }
 
+  .slider-radio-active {
+    background: #ee3643;
+  }
+
 
   .arrow-left {
     position: absolute;
     z-index: 60;
-    bottom: 131px;
+    bottom: 134px;
     left: 24px;
     width: 24px;
     height: 38px;
     background: url(../img/svg/icon-right.svg) no-repeat;
     transform: rotate(180deg);
+    border:none;
   }
 
   .arrow-right {
     position: absolute;
     z-index: 60;
-    bottom: 133px;
+    bottom: 134px;
     left: 577px;
     width: 24px;
     height: 38px;
     background: url(../img/svg/icon-right.svg) no-repeat;
+    border:none;
   }
 
 .promo-link {
@@ -1119,7 +1145,7 @@
   background-color: #ee3643;
   width: 80px;
   margin-right: 10px;
-  padding: 10px 26px 10px 35px;
+  padding: 9px 23px 9px 35px;
   text-decoration: none;
   color: #fff;
   background: #ee3643;
@@ -1165,7 +1191,7 @@
 }
 
 .makers-button {
-  margin-top: 0px;
+  margin-top: -1px;
   margin-right: 24px;
 
   display: block;
@@ -1292,7 +1318,6 @@
   font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 24px;
-  letter-spacing: -0.3px;
 }
 
 .service-list-delivery-describe {
@@ -1319,8 +1344,7 @@
   font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 24px;
-  letter-spacing: -0.4px;
-  width: 284px;
+  width: 283px;
 }
 
 .service-list-warranty-describe {
@@ -1346,7 +1370,7 @@
   font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 24px;
-  letter-spacing: -0.3px;
+
 }
 
 .service-list-credit-describe {
@@ -1373,7 +1397,7 @@
   font-size: 13px;
   line-height: 24px;
   width: 280px;
-  letter-spacing: -0.4px;
+
 }
 .service-list-items {
   margin-top: 0px;
@@ -1431,7 +1455,7 @@
   font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 24px;
-  letter-spacing: -0.3px;
+  letter-spacing: 0.2px;
 }
 .company-describe-2 {
   margin-bottom: 21px;
@@ -1439,7 +1463,7 @@
   font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 24px;
-  letter-spacing: -0.4px;
+  letter-spacing: 0.1px;
 }
 
 .transport-list {
@@ -1537,7 +1561,6 @@
   font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 24px;
-  letter-spacing: -0.5px;
 }
 
 .contacts-map {
@@ -1980,7 +2003,7 @@ border-radius: 50px;
 }
 
 .breadcrumbs li {
-  margin-right: 37px;
+  margin-right: 35px;
 }
 
 .breadcrumbs-home a {
@@ -2033,7 +2056,14 @@ border-radius: 50px;
   line-height: 18px;
   text-decoration: none;
   color: #000000;
-  letter-spacing: -0.7px;
+}
+
+.instruments-link {
+  padding-left: 4px;
+}
+
+.perforators-link {
+  padding-left: 8px;
 }
 
 
@@ -2061,7 +2091,6 @@ border-radius: 50px;
 .filters-title {
   width: 201px;
     border-radius: 3px;
-  letter-spacing: -1px;
   font-family: "PT Sans","Arial",sans-serif;
   margin-bottom: 12px;
   padding-top: 10px;
@@ -2085,7 +2114,7 @@ border-radius: 50px;
 
 .filter-price-title {
   margin-bottom: 22px;
-  letter-spacing: -1px;
+
 
   font-family: "PT Sans","Arial",sans-serif;
   font-weight: bold;
@@ -2115,7 +2144,7 @@ border-radius: 50px;
   margin-left: 2px;
   padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 3px;
+    padding-left: 1px;
   border: none;
   width: 93px;
   text-align: center;
@@ -2208,7 +2237,7 @@ border-radius: 50px;
 }
 
 .filter-makers label {
-  letter-spacing: -1.5px;
+
   position: relative;
   display: block;
   margin-bottom: 20px;
@@ -2229,16 +2258,26 @@ border-radius: 50px;
   left: 0px;
   width: 26px;
   height: 25px;
+  opacity: 0.6;
 }
+
+.filter-makers label:hover::before {
+ opacity: 1;
+}
+
 .filter-makers-item:checked ~ label::before{
   background: url(../img/svg/checkbox-on.svg) no-repeat;
+}
+
+.filter-makers-item:disabled ~ label::before {
+  opacity: 0.3;
 }
 
 
 
 
 .filter-makers-title {
-  letter-spacing: -1.6px;
+
   font-family: "PT Sans","Arial",sans-serif;
   font-weight: bold;
   font-size: 17px;
@@ -2264,7 +2303,7 @@ border-radius: 50px;
 }
 
 .filter-power label {
-  letter-spacing: -1.0px;
+
   position: relative;
   display: block;
   margin-bottom: 20px;
@@ -2284,14 +2323,23 @@ border-radius: 50px;
     left: -1px;
   width: 26px;
   height: 25px;
+  opacity: 0.6;
 }
+
+.filter-power label:hover::before {
+  opacity: 1;
+ }
 
 .filter-power-item:checked ~ label::before{
   background: url(../img/svg/radio-on.svg) no-repeat;
 }
 
+.filter-power-item:disabled ~ label::before {
+  opacity: 0.3;
+}
+
 .filter-power-title {
-  letter-spacing: -1px;
+  letter-spacing: 1px;
   font-family: "PT Sans","Arial",sans-serif;
   font-weight: bold;
   font-size: 17px;
@@ -2304,7 +2352,7 @@ border-radius: 50px;
 }
 
 .show-button {
-  letter-spacing: -0.5px;
+
   border: 1px solid #c5c5c5;
   width: 140px;
   padding-top: 10px;
@@ -2332,7 +2380,7 @@ background-color: #f7f3ec;
 
 
 .sort-title {
-  letter-spacing: -1px;
+
   font-family: "PT Sans","Arial",sans-serif;
     margin-right: 142px;
   margin-left: 20px;
@@ -2368,8 +2416,8 @@ background-color: #f7f3ec;
 
 
 .sort-item-link {
-  letter-spacing: -1px;
-  margin-right: 70px;
+
+  margin-right: 69px;
   font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -2395,8 +2443,8 @@ background-color: #f7f3ec;
 .sort-button-up {
   content: "";
   position: absolute;
-  top: 4px;
-  left: -21px;
+  top: 5px;
+    left: -24px;
   width: 15px;
   height: 15px;
   background: url(../img/svg/icon-sort-focus.svg) no-repeat;
@@ -2415,8 +2463,8 @@ background-color: #f7f3ec;
 .sort-button-down {
   content: "";
   position: absolute;
-  top: -1px;
-  left: 6px;
+  top: 0px;
+  left: 4px;
   width: 15px;
   height: 15px;
   background: url(../img/svg/icon-sort.svg) no-repeat;
@@ -2515,7 +2563,7 @@ background-color: #f7f3ec;
 
   width: 80px;
   margin-right: 10px;
-  padding: 10px 26px 10px 35px;
+  padding: 9px 23px 9px 37px;
   text-decoration: none;
   color: #fff;
   background: #ee3643;
@@ -2657,7 +2705,6 @@ background-color: #f7f3ec;
 .pagination-list li:last-child a{
   padding-right: 30px;
   padding-left: 28px;
-  letter-spacing: -0.9px;
   }
 
 
@@ -2687,7 +2734,7 @@ background-color: #f7f3ec;
 }
 
 .perforators-description {
-  letter-spacing: -0.26px;
+  letter-spacing: 0.18px;
   padding-bottom: 68px;
   font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
@@ -2754,7 +2801,6 @@ background-color: #f7f3ec;
   background-color: #ee3643;
 }
 .modal-continue-shopping {
-  letter-spacing: -0.3px;
   padding-left: 0px;
   padding-top: 13px;
   padding-bottom: 10px;
