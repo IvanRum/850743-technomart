@@ -2491,13 +2491,13 @@ body {
   display: none;
   position: fixed;
   top: 20%;
-  left: calc(50%-310px);
+  left: calc(50% - 310px);
   z-index: 200;
   -webkit-box-shadow: 0 10px 20px #adb1b9;
   box-shadow: 0 10px 20px #adb1b9;
   border-top: 6px solid #ff5357;
   width: 620px;
-  margin-left: 400px;
+  margin: 0 auto;
   background-color: #ffffff;
 }
 .notify-added {
