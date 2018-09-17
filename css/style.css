@@ -954,11 +954,11 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   background-color: #ffffff;
   list-style: none;
 }
-.popular-list li:last-child{
+.popular-list li:nth-child(4n+4){
   margin-right: 0;
 }
 .popular-item-title {
@@ -974,21 +974,9 @@ body {
   font-style: normal;
   font-family: "PT Sans","Arial",sans-serif;
 }
-.popular-item-new-title {
-  display: block;
-  padding: 0 24px 0 25px;
-  margin-top: 23px;
-  margin-bottom: 11px;
-  text-align: center;
-  color: #000;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 700;
-  font-style: normal;
-  font-family: "PT Sans","Arial",sans-serif;
-}
 .popular-item {
   margin-right: 17px;
+  margin-bottom: 20px;
   width: 220px;
   min-height: 317px;
   border: 1px solid #eaeaea;
@@ -1027,6 +1015,9 @@ body {
   background: #ee3643;
   border-radius: 3px 0 0 3px;
   margin-left: 43px;
+}
+.popular-item-title +.popular-item-link {
+  top: 36px;
 }
 .popular-item-link::after {
   content: "";
@@ -1538,6 +1529,7 @@ body {
 }
 .social-link-vk {
   margin-right: 3px;
+  margin-bottom: 3px;
   position: relative;
   width: 42px;
   height: 42px;
@@ -1557,6 +1549,7 @@ body {
 }
 .social-link-fb {
   margin-right: 3px;
+  margin-bottom: 3px;
   position: relative;
   width: 42px;
   height: 42px;
@@ -1576,6 +1569,7 @@ body {
 }
 .social-link-inst {
   margin-right: 4px;
+  margin-bottom: 3px;
   position: relative;
   width: 42px;
   height: 42px;
@@ -2359,6 +2353,9 @@ body {
   height: 0px;
   border: 20px solid #fff;
   border-left-color: #ee3643;
+}
+.catalog-item-title +.catalog-item-link {
+  top: 36px;
 }
 .catalog-item-offer{
   display: none;
